@@ -1,0 +1,16 @@
+{
+  "name": "platzi-optimizacion-web",
+  "version": "0.1.0",
+  "description": "Proyecto del curso de Optimizacion Web de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^11.3.0"
+  }
+}
