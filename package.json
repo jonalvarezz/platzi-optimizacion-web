@@ -2,7 +2,7 @@
   "name": "platzi-optimizacion-web",
   "version": "0.1.0",
   "description": "Proyecto del curso de Optimizacion Web de Platzi",
-  "main": "index.js",
+  "author": "@jonalvarezz",
   "scripts": {
     "start": "npm run dev",
     "dev": "serve .",
@@ -14,14 +14,17 @@
     "semi": false,
     "singleQuote": true
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "serve": "^11.3.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
+  "license": "ISC",
   "devDependencies": {
+    "serve": "^11.3.0",
+    "husky": "^4.2.3",
     "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   }
