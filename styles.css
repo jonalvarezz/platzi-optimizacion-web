@@ -25,7 +25,7 @@ body {
 }
 
 .header__menu {
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header__menu ul {
@@ -38,8 +38,9 @@ body {
   text-align: right;
 }
 
-.header__menu:hover ul, ul:hover {
-	display: block;
+.header__menu:hover ul,
+ul:hover {
+  display: block;
 }
 
 .header__menu li {
@@ -113,7 +114,7 @@ body {
 
 .carousel__container:hover .carousel-item:hover {
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 1;
 }
 
@@ -129,24 +130,28 @@ body {
   cursor: pointer;
   transition: 450ms all;
   -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
 }
 
 .carousel-item:hover ~ .carousel-item {
   -webkit-transform: translate3d(100px, 0, 0);
-          transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
 }
 
 .carousel-item__img {
   width: 200px;
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .carousel-item__details {
   align-items: flex-start;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   bottom: 0;
   display: flex;
   font-size: 10px;
@@ -201,7 +206,7 @@ body {
 }
 
 .input {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 25px;
   color: white;
