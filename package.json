@@ -5,7 +5,7 @@
   "author": "@jonalvarezz",
   "scripts": {
     "start": "npm run dev",
-    "dev": "serve .",
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "prettier": {
@@ -21,11 +21,11 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "serve": "^11.3.0",
     "husky": "^4.2.3",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
