@@ -9,13 +9,15 @@ const Carousel = ({ itemsList = [] }) =>
     'section.carousel',
     h(
       'div.carousel__container',
-      itemsList.map(({ attributes: { titles, posterImage, slug } }) =>
-        CarouselItem({
-          imageUrl: posterImage.large,
-          title: titles.ja_jp,
-          subtitle: titles.en,
-          slug: slug,
-        })
+      itemsList.map(
+        ({ attributes: { titles, posterImage, slug, youtubeVideoId } }) =>
+          CarouselItem({
+            imageUrl: posterImage.large,
+            title: titles.ja_jp,
+            subtitle: titles.en,
+            slug,
+            youtubeVideoId,
+          })
       )
     )
   )
