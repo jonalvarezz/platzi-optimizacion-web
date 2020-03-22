@@ -5,7 +5,7 @@ const nodeEnv = process.env.NODE_ENV || 'development'
 
 const config = {
   mode: nodeEnv,
-  entry: './src/index.js',
+  entry: ['./src/index.js', './src/home.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist',
