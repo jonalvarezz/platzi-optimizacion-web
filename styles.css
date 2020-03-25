@@ -181,8 +181,14 @@ ul:hover {
 
 .carousel-item__details--subtitle {
   color: white;
-  font-size: 8px;
+  font-size: 7px;
   margin: 3px 0px;
+}
+
+.carousel-item__details--date {
+  color: white;
+  font-size: 6px;
+  margin: 0px;
 }
 
 .footer {

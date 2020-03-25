@@ -1,4 +1,7 @@
 import h from 'hyperscript'
+import moment from 'moment'
+
+const relativeDate = dateStr => moment(dateStr, 'YYYY-MM-DD').fromNow()
 
 const Controls = ({ slug, youtubeVideoId }) =>
   h(
@@ -31,7 +34,14 @@ const Controls = ({ slug, youtubeVideoId }) =>
     )
   )
 
-const CarouselItem = ({ imageUrl, title, subtitle, slug, youtubeVideoId }) =>
+const CarouselItem = ({
+  imageUrl,
+  title,
+  subtitle,
+  slug,
+  youtubeVideoId,
+  startDate,
+}) =>
   h(
     'div.carousel-item',
     h('img.carousel-item__img', { src: imageUrl, alt: '' }),
@@ -39,7 +49,11 @@ const CarouselItem = ({ imageUrl, title, subtitle, slug, youtubeVideoId }) =>
       'div.carousel-item__details',
       Controls({ slug, youtubeVideoId }),
       h('p.carousel-item__details--title', title),
-      h('p.carousel-item__details--subtitle', subtitle)
+      h('p.carousel-item__details--subtitle', subtitle),
+      h(
+        'p.carousel-item__details--date',
+        `Released: ${relativeDate(startDate)}`
+      )
     )
   )
 
