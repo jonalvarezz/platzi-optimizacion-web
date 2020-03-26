@@ -14,9 +14,14 @@ body {
   width: 100%;
 }
 
-.header__img {
+.header__logo {
   margin-left: 30px;
   width: 200px;
+  height: 61px;
+  background-image: url(/assets/logo-platzi-video.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .login {
