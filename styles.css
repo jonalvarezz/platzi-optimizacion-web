@@ -137,7 +137,31 @@ body .main .search-input {
   width: 70%;
 }
 
-.categories__title {
+footer {
+  align-items: center;
+  background-color: #8f57fd;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Carousel
+ *******************************************
+ */
+.carousel-title {
   background: #8f57fd;
   color: white;
   font-size: 16px;
@@ -154,7 +178,7 @@ body .main .search-input {
   position: relative;
 }
 
-.carousel__container {
+.carousel > div {
   transition: 450ms -webkit-transform;
   transition: 450ms transform;
   transition: 450ms transform, 450ms -webkit-transform;
@@ -164,11 +188,11 @@ body .main .search-input {
   padding-bottom: 10px;
 }
 
-.carousel__container:hover .carousel-item {
+.carousel > div:hover .carousel-item {
   opacity: 0.3;
 }
 
-.carousel__container:hover .carousel-item:hover {
+.carousel > div:hover .carousel-item:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   opacity: 1;
@@ -194,14 +218,14 @@ body .main .search-input {
   transform: translate3d(100px, 0, 0);
 }
 
-.carousel-item__img {
+.carousel-item > img {
   width: 200px;
   height: 250px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.carousel-item__details {
+.carousel-item > div {
   align-items: flex-start;
   background: linear-gradient(
     to top,
@@ -222,49 +246,29 @@ body .main .search-input {
   top: 0;
 }
 
-.carousel-item__details--img {
+.carousel-item > div > div a > img {
   width: 20px;
 }
 
-.carousel-item:hover .carousel-item__details {
+.carousel-item:hover > div {
   opacity: 1;
 }
 
-.carousel-item__details--title {
+.carousel-item > div > p:nth-of-type(1) {
   color: white;
   margin: 5px 0px 0px 0px;
 }
 
-.carousel-item__details--subtitle {
+.carousel-item > div > p:nth-of-type(2) {
   color: white;
   font-size: 7px;
   margin: 3px 0px;
 }
 
-.carousel-item__details--date {
+.carousel-item > div > p:nth-of-type(3) {
   color: white;
   font-size: 6px;
   margin: 0px;
-}
-
-footer {
-  align-items: center;
-  background-color: #8f57fd;
-  display: flex;
-  height: 100px;
-  width: 100%;
-}
-
-footer a {
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  padding-left: 30px;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 /**
