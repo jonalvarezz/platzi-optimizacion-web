@@ -12,7 +12,40 @@ body {
   box-sizing: border-box;
 }
 
-.header {
+input:not([type='button']):not([type='checkbox']) {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+}
+
+input[type='button'] {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+::placeholder {
+  color: white;
+}
+
+header {
   align-items: center;
   background: #8f57fd;
   color: white;
@@ -23,7 +56,7 @@ body {
   width: 100%;
 }
 
-.header__logo {
+.logo {
   margin-left: 30px;
   width: 200px;
   height: 61px;
@@ -33,11 +66,11 @@ body {
   background-size: contain;
 }
 
-.header__menu {
+.menu {
   margin-right: 30px;
 }
 
-.header__menu ul {
+.menu ul {
   display: none;
   list-style: none;
   margin: 0px 0px 0px -14px;
@@ -47,31 +80,31 @@ body {
   text-align: right;
 }
 
-.header__menu:hover ul,
+.menu:hover ul,
 ul:hover {
   display: block;
 }
 
-.header__menu li {
+.menu li {
   margin: 10px 0px;
 }
 
-.header__menu li a {
+.menu li a {
   color: white;
   text-decoration: none;
 }
 
-.header__menu li a:hover {
+.menu li a:hover {
   text-decoration: underline;
 }
 
-.header__menu--profile {
+.menu > div {
   align-items: center;
   display: flex;
   cursor: pointer;
 }
 
-.header__menu--profile img {
+.menu > div > img {
   margin-right: 8px;
   width: 40px;
 }
@@ -85,9 +118,23 @@ ul:hover {
   border-radius: 0px 0px 40px 40px;
 }
 
-.main__title {
+.main h2 {
   color: white;
   font-size: 25px;
+}
+
+body .main .search-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  width: 70%;
 }
 
 .categories__title {
@@ -200,7 +247,7 @@ ul:hover {
   margin: 0px;
 }
 
-.footer {
+footer {
   align-items: center;
   background-color: #8f57fd;
   display: flex;
@@ -208,7 +255,7 @@ ul:hover {
   width: 100%;
 }
 
-.footer a {
+footer a {
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -216,33 +263,15 @@ ul:hover {
   text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
   text-decoration: underline;
-}
-
-.search-input {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
-  border-radius: 25px;
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  height: 50px;
-  margin-bottom: 20px;
-  outline: none;
-  padding: 0px 20px;
-  width: 70%;
-}
-
-::placeholder {
-  color: white;
 }
 
 /**
  * Sign Up page
  *******************************************
  */
-.register-page .header {
+.register-page header {
   background-color: #21c08b;
 }
 
@@ -258,7 +287,7 @@ ul:hover {
   ); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
 }
 
-.register__container {
+.register > section {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 40px;
@@ -273,49 +302,20 @@ ul:hover {
   width: 300px;
 }
 
-.register__container--form {
+.register > section > form {
   display: flex;
   flex-direction: column;
 }
 
-.register__container a {
+.register > section a {
   color: white;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
 }
 
-.register__container a:hover {
+.register > section a:hover {
   text-decoration: underline;
-}
-
-.input {
-  background-color: transparent;
-  border-bottom: 2px solid white;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  height: 50px;
-  margin-bottom: 20px;
-  outline: none;
-  padding: 0px 20px;
-}
-
-.button {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  border-radius: 25px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Muli', sans-serif;
-  height: 50px;
-  letter-spacing: 1px;
-  margin: 10px 0px;
 }
 
 /**
@@ -323,18 +323,8 @@ ul:hover {
  *******************************************
  */
 
-.login-page .header {
+.login-page header {
   background-color: #21c08b;
-}
-
-.header__logo {
-  margin-left: 30px;
-  width: 200px;
-  height: 61px;
-  background-image: url(/assets/logo-platzi-video.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .login {
@@ -349,7 +339,7 @@ ul:hover {
   ); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
 }
 
-.login__container {
+.login > section {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 40px;
@@ -364,56 +354,56 @@ ul:hover {
   width: 300px;
 }
 
-.login__container--form {
+.login > section > form {
   display: flex;
   flex-direction: column;
 }
 
-.login__container--form label {
+.login > section > form label {
   font-size: 14px;
 }
 
-.login__container--remember-me {
+.login form > input:nth-child(3) + div {
   color: white;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.login__container--remember-me a {
+.login form > input:nth-child(3) + div a {
   color: white;
   font-size: 14px;
   text-decoration: none;
 }
 
-.login__container--remember-me a:hover {
+.login form > input:nth-child(3) + div a:hover {
   text-decoration: underline;
 }
 
-.login__container--social-media > div {
+.login form + section > div {
   align-items: center;
   display: flex;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.login__container--social-media > div > img {
+.login form + section > div > img {
   margin-right: 10px;
   width: 30px;
 }
 
-.login__container--register {
+.login p:nth-last-child(1) {
   font-size: 14px;
 }
 
-.login__container--register a {
+.login p:nth-last-child(1) a {
   color: white;
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
 }
 
-.login__container--register a:hover {
+.login p:nth-last-child(1) a:hover {
   text-decoration: underline;
 }
 
@@ -426,7 +416,7 @@ ul:hover {
     font-size: 30px;
   }
 
-  .register__container {
+  .register > section {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -434,7 +424,7 @@ ul:hover {
     width: 100%;
   }
 
-  .login__container {
+  .login > section {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -442,7 +432,7 @@ ul:hover {
     width: 100%;
   }
 
-  .footer {
+  footer {
     align-items: flex-start;
     flex-direction: column;
   }
