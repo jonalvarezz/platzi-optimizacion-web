@@ -120,7 +120,7 @@ ul:hover {
 
 .main h2 {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 body .main .search-input {
@@ -138,7 +138,8 @@ body .main .search-input {
 }
 
 footer {
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   background-color: #8f57fd;
   display: flex;
   height: 100px;
@@ -289,18 +290,13 @@ footer a:hover {
 }
 
 .register > section {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
-  border-radius: 40px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: white;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   min-height: 600px;
   box-sizing: content-box;
-  padding: 60px 68px 40px;
-  width: 300px;
 }
 
 .register > section > form {
@@ -341,18 +337,13 @@ footer a:hover {
 }
 
 .login > section {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
-  border-radius: 40px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: white;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   min-height: 700px;
   box-sizing: content-box;
-  padding: 60px 68px 40px;
-  width: 300px;
 }
 
 .login > section > form {
@@ -406,35 +397,4 @@ footer a:hover {
 
 .login p:nth-last-child(1) a:hover {
   text-decoration: underline;
-}
-
-/**
- * Media Queries
- *******************************************
- */
-@media only screen and (max-width: 600px) {
-  .main h2 {
-    font-size: 24px;
-  }
-
-  .register > section {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .login > section {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0px;
-    width: 100%;
-  }
-
-  footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }
