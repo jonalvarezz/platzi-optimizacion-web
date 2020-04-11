@@ -5,6 +5,8 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 ### 🚀 Optimizaciones aplicadas
 
 1. Elimina bloqueo en etiquetas `script`.
+1. Convierte los estilos en Mobile First.
+1. Carga los estilos para Desktop con baja prioridad en Móvil.
 
 ### 🤖 Guía Rápida
 
