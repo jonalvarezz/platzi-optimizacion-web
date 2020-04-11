@@ -179,28 +179,14 @@ footer a:hover {
 }
 
 .carousel > div {
-  transition: 450ms -webkit-transform;
-  transition: 450ms transform;
-  transition: 450ms transform, 450ms -webkit-transform;
   font-size: 0;
   white-space: nowrap;
   margin: 70px 0px;
-  padding-bottom: 10px;
-}
-
-.carousel > div:hover .carousel-item {
-  opacity: 0.3;
-}
-
-.carousel > div:hover .carousel-item:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  opacity: 1;
+  padding-bottom: 25px;
 }
 
 .carousel-item {
   border-radius: 20px;
-  overflow: hidden;
   position: relative;
   display: inline-block;
   width: 200px;
@@ -209,23 +195,34 @@ footer a:hover {
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
-  -webkit-transform-origin: center left;
   transform-origin: center left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
-
-.carousel-item:hover ~ .carousel-item {
-  -webkit-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
+/* Change opacity to all items but current */
+.carousel > div:hover .carousel-item:not(:hover) {
+  opacity: 0.3;
+}
+/* Scale up current */
+.carousel-item:hover {
+  transform: scale(1.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+/* Move subsecuent item */
+.carousel-item:hover + .carousel-item {
+  margin-left: 100px;
 }
 
 .carousel-item > img {
   width: 200px;
   height: 250px;
-  -o-object-fit: cover;
   object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .carousel-item > div {
+  overflow: hidden;
+  border-radius: 20px;
   align-items: flex-start;
   background: linear-gradient(
     to top,
@@ -245,26 +242,26 @@ footer a:hover {
   right: 0;
   top: 0;
 }
+.carousel-item:hover > div {
+  opacity: 1;
+}
 
 .carousel-item > div > div a > img {
   width: 20px;
 }
 
-.carousel-item:hover > div {
-  opacity: 1;
-}
-
+/* Title */
 .carousel-item > div > p:nth-of-type(1) {
   color: white;
   margin: 5px 0px 0px 0px;
 }
-
+/* Subtitle */
 .carousel-item > div > p:nth-of-type(2) {
   color: white;
   font-size: 7px;
   margin: 3px 0px;
 }
-
+/* Date */
 .carousel-item > div > p:nth-of-type(3) {
   color: white;
   font-size: 6px;
