@@ -120,7 +120,7 @@ ul:hover {
 
 .main h2 {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 body .main .search-input {
@@ -413,8 +413,8 @@ footer a:hover {
  *******************************************
  */
 @media only screen and (max-width: 600px) {
-  .main__description--title {
-    font-size: 30px;
+  .main h2 {
+    font-size: 24px;
   }
 
   .register > section {
