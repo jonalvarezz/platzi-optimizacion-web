@@ -25,7 +25,7 @@ const Carousel = ({ itemsList = [] }) =>
     )
   )
 
-window.addEventListener('DOMContentLoaded', async () => {
+!(async function(document) {
   const mountReference = document.querySelector('.main').lastElementChild
 
   if (!mountReference) {
@@ -58,4 +58,4 @@ window.addEventListener('DOMContentLoaded', async () => {
         itemsList: popular,
       })
     )
-})
+})(document, window)
