@@ -2,13 +2,13 @@ import h from 'hyperscript'
 import { fetchPopular, fetchHighestRated, fetchTrending } from './api'
 import CarouselItem from './CarouselItem'
 
-const SectionTitle = title => h('h3.carousel-title', title)
+const SectionTitle = title => h('h3.carousel__title', title)
 
 const Carousel = ({ itemsList = [] }) =>
   h(
     'section.carousel',
     h(
-      'div',
+      'div.carousel__container',
       itemsList.map(
         ({
           attributes: { titles, posterImage, slug, youtubeVideoId, startDate },

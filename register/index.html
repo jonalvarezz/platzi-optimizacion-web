@@ -26,22 +26,27 @@
     <title>Registro</title>
   </head>
   <body class="register-page">
-    <header>
-      <div class="logo"></div>
+    <header class="header header--register">
+      <div class="header__logo"></div>
     </header>
     <section class="register">
-      <section>
+      <section class="register__container">
         <h2>Regístrate</h2>
-        <form class="js-login">
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Correo" required />
-          <input type="password" placeholder="Contraseña" required />
-          <input type="submit" value="Registrarme" />
+        <form class="register__form js-login">
+          <input class="input" type="text" placeholder="Nombre" />
+          <input class="input" type="text" placeholder="Correo" required />
+          <input
+            class="input"
+            type="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button class="button">Registrarme</button>
         </form>
         <a href="/login">Iniciar sesión</a>
       </section>
     </section>
-    <footer>
+    <footer class="footer">
       <a href="/">Terminos de uso</a>
       <a href="/">Declaración de privacidad</a>
       <a href="/">Centro de ayuda</a>

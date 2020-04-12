@@ -25,18 +25,23 @@
     <!-- Title -->
     <title>Inicia Sesión</title>
   </head>
-  <body class="login-page">
-    <header>
-      <div class="logo"></div>
+  <body class="">
+    <header class="header header--login">
+      <div class="header__logo"></div>
     </header>
     <section class="login">
-      <section>
+      <section class="login__container">
         <h2>Inicia sesión</h2>
-        <form class="js-login">
-          <input type="email" placeholder="Correo" required />
-          <input type="password" placeholder="Contraseña" required />
-          <input type="submit" value="Iniciar sesión" />
-          <div>
+        <form class="login__form js-login">
+          <input class="input" type="email" placeholder="Correo" required />
+          <input
+            class="input"
+            type="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button class="button">Iniciar sesión</button>
+          <div class="login__remember-me">
             <label>
               <input
                 type="checkbox"
@@ -47,21 +52,21 @@
             <a href="/">Olvidé mi contraseña</a>
           </div>
         </form>
-        <section>
-          <div>
+        <section class="login__social-media">
+          <div class="login__social-media__item">
             <img src="/assets/google-icon.png" /> Inicia sesión con Google
           </div>
-          <div>
+          <div class="login__social-media__item">
             <img src="/assets/twitter-icon.png" /> Inicia sesión con Twitter
           </div>
         </section>
-        <p>
+        <p class="login__register">
           No tienes ninguna cuenta
           <a href="/register" title="Regístrate">Regístrate</a>
         </p>
       </section>
     </section>
-    <footer>
+    <footer class="footer">
       <a href="/">Terminos de uso</a>
       <a href="/">Declaración de privacidad</a>
       <a href="/">Centro de ayuda</a>
