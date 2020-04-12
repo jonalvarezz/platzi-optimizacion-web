@@ -4,7 +4,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 
 ### 🚀 Optimizaciones aplicadas
 
-1.  fixme
+1. Elimina bloqueo en etiquetas `script`.
 
 ### 🤖 Guía Rápida
 
