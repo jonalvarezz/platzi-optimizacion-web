@@ -7,6 +7,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Elimina bloqueo en etiquetas `script`.
 1. Convierte los estilos en Mobile First.
 1. Carga los estilos para Desktop con baja prioridad en Móvil.
+1. Agiliza HTTP handshake con otros dominios de recursos.
 
 ### 🤖 Guía Rápida
 
