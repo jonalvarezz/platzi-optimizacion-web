@@ -2,7 +2,7 @@ import { withRouteProtection, handleLogin, handleLogout } from './login'
 
 withRouteProtection()
 
-window.addEventListener('DOMContentLoaded', () => {
+!(function(document) {
   handleLogin()
   handleLogout()
-})
+})(document)
