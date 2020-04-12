@@ -189,6 +189,7 @@ footer a:hover {
 }
 
 .carousel-item {
+  will-change: transform;
   border-radius: 20px;
   position: relative;
   display: inline-block;
@@ -199,7 +200,6 @@ footer a:hover {
   cursor: pointer;
   transition: 450ms all;
   transform-origin: center left;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 /* Change opacity to all items but current */
 .carousel > div:hover .carousel-item:not(:hover) {
@@ -208,11 +208,26 @@ footer a:hover {
 /* Scale up current */
 .carousel-item:hover {
   transform: scale(1.5);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
 }
 /* Move subsecuent item */
 .carousel-item:hover + .carousel-item {
-  margin-left: 100px;
+  transform: translateX(100px);
+}
+
+.carousel-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+  opacity: 0.4;
+  transition: 450ms opacity;
+}
+.carousel-item:hover:before {
+  opacity: 1;
 }
 
 .carousel-item > img {
