@@ -13,31 +13,32 @@ body {
   box-sizing: border-box;
 }
 
-input:not([type='submit']):not([type='checkbox']) {
+.input,
+.button {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+}
+
+.input {
   background-color: transparent;
   border-bottom: 2px solid white;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
   color: white;
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  height: 50px;
   margin-bottom: 20px;
   outline: none;
   padding: 0px 20px;
 }
 
-input[type='submit'] {
+.button {
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
-  height: 50px;
   letter-spacing: 1px;
   margin: 10px 0px;
 }
@@ -46,7 +47,7 @@ input[type='submit'] {
   color: white;
 }
 
-header {
+.header {
   align-items: center;
   color: white;
   display: flex;
@@ -56,7 +57,7 @@ header {
   width: 100%;
 }
 
-.logo {
+.header__logo {
   margin-left: 30px;
   width: 200px;
   height: 61px;
@@ -66,11 +67,11 @@ header {
   background-size: contain;
 }
 
-.menu {
+.header__menu {
   margin-right: 30px;
 }
 
-.menu ul {
+.header__menu ul {
   display: none;
   list-style: none;
   margin: 0px 0px 0px -14px;
@@ -80,31 +81,31 @@ header {
   text-align: right;
 }
 
-.menu:hover ul,
+.header__menu:hover ul,
 ul:hover {
   display: block;
 }
 
-.menu li {
+.header__menu li {
   margin: 10px 0px;
 }
 
-.menu li a {
+.header__menu li a {
   color: white;
   text-decoration: none;
 }
 
-.menu li a:hover {
+.header__menu li a:hover {
   text-decoration: underline;
 }
 
-.menu > div {
+.header__menu--profile {
   align-items: center;
   display: flex;
   cursor: pointer;
 }
 
-.menu > div > img {
+.header__menu--profile > img {
   margin-right: 8px;
   width: 40px;
 }
@@ -122,12 +123,12 @@ ul:hover {
   overflow-x: visible;
 }
 
-.main h2 {
+.main__title {
   color: white;
   font-size: 24px;
 }
 
-body .main .search-input {
+.search-input {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 25px;
@@ -159,7 +160,7 @@ footer a {
   font-weight: bold;
 }
 
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
@@ -167,13 +168,12 @@ footer a:hover {
  * Carousel
  *******************************************
  */
-.carousel-title {
+.carousel__title {
   color: white;
   font-size: 18px;
   padding-left: 30px;
   width: 100%;
 }
-
 .carousel {
   overflow: scroll;
   padding-left: 30px;
@@ -181,7 +181,7 @@ footer a:hover {
   position: relative;
 }
 
-.carousel > div {
+.carousel__container {
   font-size: 0;
   white-space: nowrap;
   margin: 70px 0px;
@@ -202,7 +202,7 @@ footer a:hover {
   transform-origin: center left;
 }
 /* Change opacity to all items but current */
-.carousel > div:hover .carousel-item:not(:hover) {
+.carousel__container:hover .carousel-item:not(:hover) {
   opacity: 0.3;
 }
 /* Scale up current */
@@ -230,7 +230,7 @@ footer a:hover {
   opacity: 1;
 }
 
-.carousel-item > img {
+.carousel-item__img {
   width: 200px;
   height: 250px;
   object-fit: cover;
@@ -238,7 +238,7 @@ footer a:hover {
   border-radius: 20px;
 }
 
-.carousel-item > div {
+.carousel-item__details {
   overflow: hidden;
   border-radius: 20px;
   align-items: flex-start;
@@ -260,27 +260,26 @@ footer a:hover {
   right: 0;
   top: 0;
 }
-.carousel-item:hover > div {
+.carousel-item:hover > .carousel-item__details {
   opacity: 1;
 }
 
-.carousel-item > div > div a > img {
+.carousel-item__details--img {
   width: 20px;
 }
 
-/* Title */
-.carousel-item > div > p:nth-of-type(1) {
+.carousel-item__details--title {
   color: white;
   margin: 5px 0px 0px 0px;
 }
-/* Subtitle */
-.carousel-item > div > p:nth-of-type(2) {
+
+.carousel-item__details--subtitle {
   color: white;
   font-size: 7px;
   margin: 3px 0px;
 }
-/* Date */
-.carousel-item > div > p:nth-of-type(3) {
+
+.carousel-item__details--date {
   color: white;
   font-size: 6px;
   margin: 0px;
