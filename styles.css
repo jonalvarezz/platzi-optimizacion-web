@@ -105,7 +105,7 @@ ul:hover {
   cursor: pointer;
 }
 
-.header__menu--profile > img {
+.header__menu--profile > svg {
   margin-right: 8px;
   width: 40px;
 }
