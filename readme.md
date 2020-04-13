@@ -17,6 +17,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Aplica Lazy load para las imágenes.
 1. Compila el código para producción.
 1. Utiliza un servidor para producción.
+1. Agrega analizador del bundle: `npm run dev|build -- --analyze`
 
 ### 🤖 Guía Rápida
 
