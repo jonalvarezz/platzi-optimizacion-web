@@ -12,6 +12,8 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Reduce complejidad de selectores CSS.
 1. Desbloquea la carga del logo.
 1. Evita texto invisible durante la carga (FOIT).
+1. Reduce el tamaño del logo en 90%.
+1. Minimiza requests HTTP con SVG.
 
 ### 🤖 Guía Rápida
 
