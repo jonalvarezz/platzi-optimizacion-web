@@ -4,9 +4,15 @@
  */
 body {
   margin: 0;
-  font-family: 'Muli', sans-serif;
   background: #21c08b;
   background-image: linear-gradient(#21c08b, #8f57fd);
+}
+
+html {
+  font-family: Helvetica, Ariel, sans-serif;
+}
+html.wf-active {
+  font-family: 'Muli', sans-serif;
 }
 
 * {

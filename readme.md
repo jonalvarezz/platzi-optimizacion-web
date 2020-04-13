@@ -12,6 +12,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Reduce complejidad de selectores CSS.
 1. Desbloquea la carga del logo.
 1. Evita _Layout Shifts_.
+1. Evita texto invisible durante la carga (FOIT).
 
 ### 🤖 Guía Rápida
 
