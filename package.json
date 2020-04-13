@@ -31,6 +31,7 @@
     "pretty-quick": "^2.0.1",
     "serve": "^11.3.0",
     "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   }
