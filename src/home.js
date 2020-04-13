@@ -1,4 +1,5 @@
 import h from 'hyperscript'
+import lozad from 'lozad'
 import { fetchPopular, fetchHighestRated, fetchTrending } from './api'
 import CarouselItem from './CarouselItem'
 
@@ -58,4 +59,9 @@ const Carousel = ({ itemsList = [] }) =>
         itemsList: popular,
       })
     )
+
+  // Add lazy loading
+  const carouselImages = document.querySelectorAll('.carousel-item__img')
+  const observer = lozad(carouselImages)
+  observer.observe()
 })(document, window)
