@@ -16,6 +16,8 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Minimiza requests HTTP con SVG.
 1. Aplica Lazy load para las imágenes.
 1. Evita _Layout Shifts_.
+1. Compila el código para producción.
+1. Utiliza un servidor para producción.
 
 ### 🤖 Guía Rápida
 
