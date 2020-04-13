@@ -18,6 +18,9 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Compila el código para producción.
 1. Utiliza un servidor para producción.
 1. Agrega analizador del bundle: `npm run dev|build -- --analyze`
+1. Uso conciente de Tree Shaking.
+1. Mejora TTI por 5 seg.
+1. Reduce el tamaño del Bundle un 70% gzipped.
 
 ### 🤖 Guía Rápida
 
