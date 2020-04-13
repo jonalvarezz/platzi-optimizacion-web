@@ -30,9 +30,27 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
     Inicia el proyecto
 
     ```sh
-    npm start
+    npm run dev
     ```
 
     El sitio estará disponible en http://localhost:8080.
 
     Happy hacking!
+
+1.  **Para producción.**
+
+    Construye el proyecto
+
+    ```sh
+    npm run build
+    ```
+
+    El sitio podrá ser accedido como un sitio estático.
+
+    Un servidor de archivos estático está incluido y se puede iniciar con
+
+    ```sh
+    npm start
+    ```
+
+    El sitio estará disponible en http://localhost:5000.
