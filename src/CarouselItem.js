@@ -44,7 +44,7 @@ const CarouselItem = ({
 }) =>
   h(
     'div.carousel-item',
-    h('img.carousel-item__img', { src: imageUrl, alt: '' }),
+    h('img.carousel-item__img', { src: imageUrl, alt: title, loading: 'lazy' }),
     h(
       'div.carousel-item__details',
       Controls({ slug, youtubeVideoId }),
