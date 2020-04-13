@@ -175,15 +175,15 @@ footer a {
   width: 100%;
 }
 .carousel {
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding-left: 30px;
   width: 100%;
   position: relative;
 }
 
 .carousel__container {
-  font-size: 0;
-  white-space: nowrap;
+  display: flex;
   margin: 70px 0px;
   padding-bottom: 25px;
 }
@@ -192,7 +192,6 @@ footer a {
   will-change: transform;
   border-radius: 20px;
   position: relative;
-  display: inline-block;
   width: 200px;
   height: 250px;
   margin-right: 10px;
