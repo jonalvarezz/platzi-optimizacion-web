@@ -24,8 +24,10 @@ export const logout = event => {
   window.location = '/login'
 }
 
+const protectedRoutes = ['/']
+const isProtectedRoute = path => protectedRoutes.includes(path)
 export const withRouteProtection = (redirection = '/login') => {
-  if (window.location.pathname.startsWith(redirection)) {
+  if (!isProtectedRoute(window.location.pathname)) {
     return 1
   }
 

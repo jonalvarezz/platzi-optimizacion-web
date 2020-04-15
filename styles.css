@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
 }
 
-input:not([type='button']):not([type='checkbox']) {
+input:not([type='submit']):not([type='checkbox']) {
   background-color: transparent;
   border-bottom: 2px solid white;
   border-left: 0px;
@@ -27,7 +27,7 @@ input:not([type='button']):not([type='checkbox']) {
   padding: 0px 20px;
 }
 
-input[type='button'] {
+input[type='submit'] {
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 25px;
