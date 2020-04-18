@@ -22,6 +22,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Uso conciente de Tree Shaking.
 1. Mejora TTI por 5 seg.
 1. Reduce el tamaño del Bundle un 70% gzipped.
+1. Divide el bundle en dos archivos (code splitting)
 
 ### 🤖 Guía Rápida
 
