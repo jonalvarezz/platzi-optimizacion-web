@@ -12,11 +12,14 @@ if (shouldAnalyze) {
 
 const config = {
   mode: nodeEnv,
-  entry: ['./src/index.js', './src/home.js'],
+  entry: {
+    visitors: './src/visitors.js',
+    home: './src/home.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist',
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   devServer: {
     contentBase: '.',

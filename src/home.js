@@ -2,6 +2,7 @@ import h from 'hyperscript'
 import lozad from 'lozad'
 import { fetchPopular, fetchHighestRated, fetchTrending } from './api'
 import CarouselItem from './CarouselItem'
+import { handleLogout, withRouteProtection } from './auth'
 
 const SectionTitle = title => h('h3.carousel__title', title)
 
@@ -27,6 +28,9 @@ const Carousel = ({ itemsList = [] }) =>
   )
 
 !(async function(document) {
+  handleLogout()
+  withRouteProtection()
+
   const mainSection = document.querySelector('.main')
 
   if (!mainSection) {
