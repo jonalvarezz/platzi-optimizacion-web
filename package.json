@@ -1,13 +1,14 @@
 {
   "name": "platzi-optimizacion-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Proyecto del curso de Optimizacion Web de Platzi",
   "author": "@jonalvarezz",
+  "main": "serve.js",
   "scripts": {
     "start": "npm run serve",
-    "dev": "webpack-dev-server",
+    "dev": "concurrently \"webpack -w\" \"micro-dev\"",
     "build": "webpack -p",
-    "serve": "serve ."
+    "serve": "micro"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -22,12 +23,15 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "css-loader": "^3.5.2",
     "date-fns": "^2.12.0",
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
     "lodash": "^4.17.15",
     "lozad": "^1.14.0",
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0",
     "modal-video": "^2.4.2",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1",
@@ -35,7 +39,9 @@
     "style-loader": "^1.1.4",
     "webpack": "^4.42.0",
     "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0"
   }
 }
