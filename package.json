@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "description": "Proyecto del curso de Optimizacion Web de Platzi",
   "author": "@jonalvarezz",
+  "main": "serve.js",
   "scripts": {
-    "start": "npm run serve",
-    "dev": "webpack-dev-server",
+    "start": "npm run build && npm run serve",
+    "dev": "echo 'fix me :C'",
     "build": "webpack -p",
-    "serve": "serve ."
+    "serve": "node serve.js"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -37,5 +38,8 @@
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0"
   }
 }

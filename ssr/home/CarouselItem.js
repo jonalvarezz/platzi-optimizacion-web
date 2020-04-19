@@ -1,6 +1,6 @@
-import h from 'hyperscript'
-import formatDistance from 'date-fns/formatDistance'
-import parseISO from 'date-fns/parseISO'
+const h = require('hyperscript')
+const formatDistance = require('date-fns/formatDistance')
+const parseISO = require('date-fns/parseISO')
 
 const relativeDate = dateStr =>
   formatDistance(parseISO(dateStr, 'YYYY-MM-DD'), new Date())
@@ -64,4 +64,4 @@ const CarouselItem = ({
     )
   )
 
-export default CarouselItem
+module.exports = CarouselItem
