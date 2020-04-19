@@ -1,4 +1,5 @@
-import get from 'lodash/get'
+const fetch = require('isomorphic-unfetch')
+const get = require('lodash/get')
 
 const BASE_URL = 'https://kitsu.io/api/edge'
 const PER_PAGE = 7
@@ -23,11 +24,17 @@ const request = (endpoint = '') =>
     .then(toJson)
     .then(extractData)
 
-export const fetchPopular = (limit = PER_PAGE) =>
+const fetchPopular = (limit = PER_PAGE) =>
   request(`/anime?page[limit]=${limit}&sort=-user_count`)
 
-export const fetchHighestRated = (limit = PER_PAGE) =>
+const fetchHighestRated = (limit = PER_PAGE) =>
   request(`/trending/anime?limit=${limit}`)
 
-export const fetchTrending = (limit = PER_PAGE) =>
+const fetchTrending = (limit = PER_PAGE) =>
   request(`/anime?page[limit]=${limit}&sort=-average_rating`)
+
+module.exports = {
+  fetchPopular,
+  fetchHighestRated,
+  fetchTrending,
+}
