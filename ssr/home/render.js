@@ -7,9 +7,11 @@ const CarouselItem = require('./CarouselItem')
  * @return {Promise<string>}
  */
 async function render() {
-  const trending = await fetchTrending()
-  const popular = await fetchPopular()
-  const highestRated = await fetchHighestRated()
+  const [trending, popular, highestRated] = await Promise.all([
+    fetchTrending(),
+    fetchPopular(),
+    fetchHighestRated(),
+  ])
 
   const html = h(
     'section',

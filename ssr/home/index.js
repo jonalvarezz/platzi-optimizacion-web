@@ -13,12 +13,15 @@ const PLACEHOLDER = '<div id="ssr-placeholder"></div>'
 async function process(request, response) {
   const homeFileBuffer = fs.readFileSync('./index.html')
   const htmlText = homeFileBuffer.toString()
-
-  const content = await render()
-  const htmlWithContent = htmlText.replace(PLACEHOLDER, content)
+  const [precontent, postcontent] = htmlText.split(PLACEHOLDER)
 
   response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' })
-  response.write(htmlWithContent)
+  response.write(precontent)
+
+  const content = await render()
+  response.write(content)
+
+  response.write(postcontent)
   response.end()
 }
 
