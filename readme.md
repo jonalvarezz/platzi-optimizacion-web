@@ -24,6 +24,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Reduce el tamaño del Bundle un 70% gzipped.
 1. Divide el bundle en dos archivos (code splitting)
 1. Aplica lazy load para la librería del modal.
+1. Renderiza el contenido principal desde nuestro propio servidor node (SSR).
 
 ### 🤖 Guía Rápida
 
