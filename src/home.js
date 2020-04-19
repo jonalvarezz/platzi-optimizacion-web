@@ -3,6 +3,7 @@ import lozad from 'lozad'
 import { fetchPopular, fetchHighestRated, fetchTrending } from './api'
 import CarouselItem from './CarouselItem'
 import { handleLogout, withRouteProtection } from './auth'
+import modalListener from './modal'
 
 const SectionTitle = title => h('h3.carousel__title', title)
 
@@ -68,4 +69,7 @@ const Carousel = ({ itemsList = [] }) =>
   const carouselImages = document.querySelectorAll('.carousel-item__img')
   const observer = lozad(carouselImages)
   observer.observe()
+
+  // Add modal listener
+  document.body.addEventListener('click', modalListener)
 })(document, window)
