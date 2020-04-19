@@ -15,7 +15,7 @@ async function process(request, response) {
   const htmlText = homeFileBuffer.toString()
   const [precontent, postcontent] = htmlText.split(PLACEHOLDER)
 
-  response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' })
+  response.writeHead(206, { 'Content-Type': 'text/html; charset=utf-8' })
   response.write(precontent)
 
   const content = await render()
