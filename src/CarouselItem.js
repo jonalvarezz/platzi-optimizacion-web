@@ -9,9 +9,10 @@ const Controls = ({ slug, youtubeVideoId }) =>
   h(
     'div',
     h(
-      'a',
+      'a.js-modal',
       {
         href: `https://www.youtube.com/watch?v=${youtubeVideoId}`,
+        'data-videoid': youtubeVideoId,
         title: 'Watch trailer',
         target: '_blank',
         rel: 'noreferrer',
