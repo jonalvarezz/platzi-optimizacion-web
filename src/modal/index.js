@@ -1,5 +1,3 @@
-import openVideoModal from './open'
-
 /**
  * Open a video modal when an <a.js-modal> element is _clicked_
  * The modal library, and its styles, are lazy loaded.
@@ -15,7 +13,12 @@ const modalListener = event => {
 
   event.preventDefault()
   const videoUrl = linkElement.dataset.videoid
-  openVideoModal(videoUrl)
+
+  import(/* webpackChunkName: "modal" */ './open').then(
+    ({ default: openVideoModal }) => {
+      openVideoModal(videoUrl)
+    }
+  )
 
   return 1
 }
