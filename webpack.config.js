@@ -13,8 +13,8 @@ if (shouldAnalyze) {
 const config = {
   mode: nodeEnv,
   entry: {
-    visitors: './src/visitors.js',
-    home: './src/home.js',
+    visitors: './frontend/visitors.js',
+    home: './frontend/home.js',
   },
   module: {
     rules: [
