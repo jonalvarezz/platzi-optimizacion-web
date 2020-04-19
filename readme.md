@@ -41,7 +41,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
     npm run dev
     ```
 
-    El sitio estará disponible en http://localhost:8080.
+    El sitio estará disponible en http://localhost:3000.
 
     Happy hacking!
 
@@ -53,12 +53,12 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
     npm run build
     ```
 
-    El sitio podrá ser accedido como un sitio estático.
+    El proyecto es una applicación de NodeJS.
 
-    Un servidor de archivos estático está incluido y se puede iniciar con
+    La aplicación se puede iniciar con:
 
     ```sh
     npm start
     ```
 
-    El sitio estará disponible en http://localhost:5000.
+    El sitio estará disponible en http://localhost:3000.

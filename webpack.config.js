@@ -30,11 +30,6 @@ const config = {
     contentBase: '.',
   },
   plugins,
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
 }
 
 module.exports = config

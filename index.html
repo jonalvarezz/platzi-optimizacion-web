@@ -18,10 +18,6 @@
       rel="stylesheet"
       href="/desktop.css"
     />
-    <!-- Scripts -->
-    <script async src="https://unpkg.com/unfetch/polyfill"></script>
-    <script async src="dist/vendors~main.bundle.js"></script>
-    <script async src="dist/main.bundle.js"></script>
     <!-- Title -->
     <title>PlatziVideo</title>
   </head>
@@ -66,6 +62,7 @@
     <section class="main">
       <h2 class="main__title">¿Qué quieres ver hoy?</h2>
       <input type="text" class="search-input" placeholder="Buscar..." />
+      <div id="ssr-placeholder"></div>
     </section>
 
     <footer>
@@ -89,6 +86,8 @@
       </p>
     </footer>
 
+    <!-- Scripts -->
+    <script async src="dist/main.bundle.js"></script>
     <!-- Fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
