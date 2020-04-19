@@ -16,6 +16,14 @@ const config = {
     visitors: './src/visitors.js',
     home: './src/home.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
