@@ -13,6 +13,14 @@ if (shouldAnalyze) {
 const config = {
   mode: nodeEnv,
   entry: './src/index.js',
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
