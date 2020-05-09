@@ -1,6 +1,7 @@
 const CACHE_NAME = 'app-v1'
 
 self.addEventListener('fetch', myCustomFetch)
+self.addEventListener('activate', clearCache)
 
 function myCustomFetch(event) {
   const response = cacheOrFetch(event)
@@ -41,4 +42,9 @@ async function cacheOrFetch(event) {
 const assetsRegExp = /.png|.gif|.jpg|.jpeg|.css|.js/g
 function isAssetCSS(url) {
   return assetsRegExp.test(url)
+}
+
+function clearCache(event) {
+  const deletePromise = caches.delete(CACHE_NAME)
+  event.waitUntil(deletePromise)
 }
