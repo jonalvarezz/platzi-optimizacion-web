@@ -24,6 +24,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Divide el bundle en dos archivos (code splitting)
 1. Aplica lazy load para la librería del modal.
 1. Renderiza el contenido principal desde nuestro propio servidor node (SSR).
+1. Guarda assets en el cache del navegador con Service Workers.
 
 ### 🤖 Guía Rápida
 
