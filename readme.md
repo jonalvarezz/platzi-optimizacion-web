@@ -25,6 +25,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Aplica lazy load para la librería del modal.
 1. Renderiza el contenido principal desde nuestro propio servidor node (SSR).
 1. Pre-renderiza el contenido principal de forma estática (SSG).
+1. Guarda assets en el cache del navegador con Service Workers.
 
 ### 🤖 Guía Rápida
 
