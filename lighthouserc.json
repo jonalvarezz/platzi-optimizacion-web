@@ -20,7 +20,10 @@
     "collect": {
       "numberOfRuns": 5,
       "startServerCommand": "npm run serve",
-      "startServerReadyPattern": "running"
+      "startServerReadyPattern": "running",
+      "settings": {
+        "extraHeaders": "{\"Cookie\": \"authinfo=1234567\"}"
+      }
     }
   }
 }
