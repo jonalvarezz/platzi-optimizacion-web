@@ -10,7 +10,8 @@
     },
     "collect": {
       "numberOfRuns": 2,
-      "startServerCommand": "npm run serve"
+      "startServerCommand": "npm run serve",
+      "startServerReadyPattern": "running"
     }
   }
 }
