@@ -5,11 +5,11 @@
       "assertions": {
         "categories:performance": ["warn", { "minScore": 0.9 }],
         "first-contentful-paint": ["error", { "minScore": 0.6 }],
-        "resource-summary:font:count": ["warn", { "maxNumericValue": 1 }]
+        "resource-summary:font:count": ["warn", { "maxNumericValue": 0 }]
       }
     },
     "collect": {
-      "numberOfRuns": 2,
+      "numberOfRuns": 5,
       "startServerCommand": "npm run serve",
       "startServerReadyPattern": "running"
     }
