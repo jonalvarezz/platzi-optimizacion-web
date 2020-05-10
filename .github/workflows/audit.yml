@@ -1,0 +1,33 @@
+# Flujo automatizada para auditar cada Pull Request con Lighthouse
+
+name: Performance Audit
+
+# Control: Ejecute la acción para cada Pull Request
+on:
+  pull_request:
+    branches: [todolobello]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Audit with lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          # Use nuestra configuracion de Lighthouse CI para correr
+          # nuestro propio servidor Node. Lee más en:
+          # LHCLI options https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/cli.md
+          # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
+          configPath: './lighthouserc.json'
