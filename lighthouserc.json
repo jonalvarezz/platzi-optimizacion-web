@@ -1,5 +1,6 @@
 {
   "ci": {
+    "url": "http://localhost:3000",
     "assert": {
       "assertions": {
         "categories:performance": ["warn", { "minScore": 0.9 }],
