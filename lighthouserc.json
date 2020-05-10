@@ -5,7 +5,7 @@
         "preset": "lighthouse:recommended",
         "categories:performance": ["error", { "minScore": 0.8 }],
         "first-contentful-paint": ["error", { "minScore": 0.8 }],
-        "interactive": ["error", { "maxNumericValue": 2500 }],
+        "interactive": ["error", { "maxNumericValue": 5000 }],
         "resource-summary:font:count": ["error", { "maxNumericValue": 1 }],
         "resource-summary:script:size": [
           "error",
