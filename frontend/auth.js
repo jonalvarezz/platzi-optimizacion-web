@@ -10,7 +10,7 @@ export const isLoggedIn = () => {
   const authLocal = window.localStorage.getItem(SESSION_KEY)
   const authCookie = document.cookie.match(SESSION_KEY) // CI
 
-  return authLocal || authCookie
+  return authLocal || authCookie != null
 }
 
 export const login = event => {
