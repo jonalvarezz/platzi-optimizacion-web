@@ -6,7 +6,7 @@ name: Performance Audit
 on:
   push:
     branches:
-    - lighthouse
+      - lighthouse
 
 jobs:
   lighthouse:
@@ -31,6 +31,7 @@ jobs:
           # nuestro propio servidor Node. Lee más en:
           # LHCLI options https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/cli.md
           # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
+          runs: 5
           urls: 'http://localhost:3000'
           configPath: './lighthouserc.json'
           uploadArtifacts: true

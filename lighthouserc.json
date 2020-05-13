@@ -1,5 +1,12 @@
 {
   "ci": {
+    "collect": {
+      "startServerCommand": "npm run serve",
+      "startServerReadyPattern": "running",
+      "settings": {
+        "extraHeaders": "{\"Cookie\": \"authinfo=1234567\"}"
+      }
+    },
     "assert": {
       "assertions": {
         "preset": "lighthouse:recommended",
@@ -15,14 +22,6 @@
           "error",
           { "maxNumericValue": 100000 }
         ]
-      }
-    },
-    "collect": {
-      "numberOfRuns": 5,
-      "startServerCommand": "npm run serve",
-      "startServerReadyPattern": "running",
-      "settings": {
-        "extraHeaders": "{\"Cookie\": \"authinfo=1234567\"}"
       }
     }
   }
