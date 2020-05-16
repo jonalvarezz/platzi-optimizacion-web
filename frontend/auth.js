@@ -6,12 +6,7 @@
 
 const SESSION_KEY = 'authinfo'
 
-export const isLoggedIn = () => {
-  const authLocal = window.localStorage.getItem(SESSION_KEY)
-  const authCookie = document.cookie.match(SESSION_KEY) // CI
-
-  return authLocal || authCookie != null
-}
+export const isLoggedIn = () => window.localStorage.getItem(SESSION_KEY)
 
 export const login = event => {
   if (event) {
