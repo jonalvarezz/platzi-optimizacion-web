@@ -3,6 +3,7 @@
     "collect": {
       "startServerCommand": "npm run serve",
       "startServerReadyPattern": "running",
+      "puppeteerScript": "./puppeteer-script.js",
       "settings": {
         "disableStorageReset": true,
         "extraHeaders": "{\"Cookie\": \"authinfo=1234\"}",
