@@ -33,5 +33,5 @@ jobs:
           # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
           runs: 5
           urls: 'http://localhost:3000'
-          configPath: './lighthouserc.json'
+          configPath: './github/workflows/setup/lighthouse-audit.json'
           uploadArtifacts: true
