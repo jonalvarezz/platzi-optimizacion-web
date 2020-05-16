@@ -5,7 +5,8 @@
       "startServerReadyPattern": "running",
       "settings": {
         "disableStorageReset": true,
-        "extraHeaders": { "Cookie": "authinfo=hehe-much-secure" }
+        "extraHeaders": "{\"Cookie\": \"authinfo=1234\"}",
+        "maxWaitForLoad": 90000
       }
     },
     "assert": {
