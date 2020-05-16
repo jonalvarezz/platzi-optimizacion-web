@@ -1,6 +1,7 @@
 module.exports = {
   extends: 'lighthouse:default',
   settings: {
-    extraHeaders: { Cookie: 'authinfo=hehe-much-secure' },
+    disableStorageReset: true,
+    extraHeaders: { cookie: 'authinfo=hehe-much-secure' },
   },
 }
