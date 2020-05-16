@@ -24,7 +24,7 @@ jobs:
           npm install
           npm run build
 
-      - name: Audit with lighthouse
+      - name: Audit with lighthouse CI
         uses: treosh/lighthouse-ci-action@v2
         with:
           # Use nuestra configuracion de Lighthouse CI para correr
