@@ -35,14 +35,23 @@
     <section class="login">
       <section class="login__container">
         <h2>Inicia sesión</h2>
-        <p id="test">it has NO auth cookie</p>
+        <p
+          id="test"
+          style="background-color: tomato; color: white; padding: 1em"
+        >
+          it has NO auth cookie
+        </p>
         <script>
           !(function(document) {
             const hasCookie = document.cookie.match('authinfo')
-            let text =
-              hasCookie != null ? 'it has cookie :D' : 'it has NO cookie :('
-
-            document.querySelector('p#test').textContent = text
+            const node = document.querySelector('p#test')
+            if (hasCookie != null) {
+              node.textContent = 'it has cookie :D'
+              node.style.backgroundColor = 'olivedrab'
+            } else {
+              node.textContent = 'it has NO cookie :('
+              node.style.backgroundColor = 'orange'
+            }
           })(document)
         </script>
         <form class="login__form js-login">
