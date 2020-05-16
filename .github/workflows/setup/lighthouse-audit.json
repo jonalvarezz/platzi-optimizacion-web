@@ -1,8 +1,8 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "npm run serve",
-      "startServerReadyPattern": "running",
+      "startServerCommand": "npm start",
+      "startServerReadyPattern": "micro",
       "puppeteerScript": "./.github/workflows/setup/puppeteer-login.js",
       "settings": {
         "disableStorageReset": true
