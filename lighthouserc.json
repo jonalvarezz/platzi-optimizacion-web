@@ -4,7 +4,8 @@
       "startServerCommand": "npm run serve",
       "startServerReadyPattern": "running",
       "settings": {
-        "configPath": "./lighthouse-config.js"
+        "disableStorageReset": true,
+        "extraHeaders": "{\"Cookie\": \"authinfo=1234\"}"
       }
     },
     "assert": {
