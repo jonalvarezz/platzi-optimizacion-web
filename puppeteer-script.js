@@ -8,5 +8,5 @@ module.exports = async (browser, context) => {
   await page.type('input[type="email"]', 'hola@parola.com')
   await page.type('input[type="password"]', 'parola')
   await page.click('button')
-  await page.waitForNavigation()
+  await page.waitForSelector('.carousel-item')
 }
