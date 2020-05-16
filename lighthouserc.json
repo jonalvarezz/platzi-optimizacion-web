@@ -4,7 +4,7 @@
       "startServerCommand": "npm run serve",
       "startServerReadyPattern": "running",
       "settings": {
-        "extraHeaders": "{\"Cookie\": \"authinfo=1234567\"}"
+        "configPath": "./lighthouse-config.js"
       }
     },
     "assert": {
