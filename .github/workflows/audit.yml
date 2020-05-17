@@ -3,10 +3,11 @@
 name: Performance Audit
 
 # Control: Ejecute la acción para cada Pull Request
-on:
+on: 
   pull_request:
-    branches: 
-      - todo-lo-bello
+  push:
+    branches:
+    - todo-lo-bello
 
 jobs:
   lighthouse:
