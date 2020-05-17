@@ -1,0 +1,37 @@
+# Flujo automatizada para auditar cada Pull Request con Lighthouse
+
+name: Performance Audit
+
+# Control: Ejecute la acción para cada Pull Request
+# Y cada Push a nuestro bello branch de producción
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Audit with lighthouse CI
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          # Configuración para auditar sobre un sito estático
+          # Lee más en:
+          # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
+          runs: 5
+          uploadArtifacts: true
+          configPath: './.github/workflows/setup/lighthouse-audit.json'
