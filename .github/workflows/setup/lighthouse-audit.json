@@ -1,7 +1,6 @@
 {
   "ci": {
     "collect": {
-      "url": ["http://localhost:3000/"],
       "startServerCommand": "npm start",
       "startServerReadyPattern": "micro",
       "settings": {
