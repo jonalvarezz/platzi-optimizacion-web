@@ -5,11 +5,12 @@
       "startServerReadyPattern": "micro",
       "puppeteerScript": "./.github/workflows/setup/puppeteer-login.js",
       "settings": {
-        "disableStorageReset": false
+        "disableStorageReset": true
       }
     },
     "assert": {
       "assertions": {
+        preset: 'lighthouse:recommended',
         "categories:performance": ["error", { "minScore": 0.4 }],
         "first-contentful-paint": ["error", { "minScore": 0.4 }],
         "interactive": ["error", { "maxNumericValue": 1500 }],
