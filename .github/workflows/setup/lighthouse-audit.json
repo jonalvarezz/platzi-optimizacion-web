@@ -10,7 +10,7 @@
     },
     "assert": {
       "assertions": {
-        preset: 'lighthouse:recommended',
+        "preset": "lighthouse:recommended",
         "categories:performance": ["error", { "minScore": 0.4 }],
         "first-contentful-paint": ["error", { "minScore": 0.4 }],
         "interactive": ["error", { "maxNumericValue": 1500 }],
