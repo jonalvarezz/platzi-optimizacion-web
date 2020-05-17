@@ -29,6 +29,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Deploy en Netlify.
 1. Genera el contenido estático cada semana con GitHub Actions.
 1. Guarda assets en el cache del navegador con Service Workers.
+1. Automatiza Performance Audits con Lighthouse y GitHub Actions.
 
 ### 🤖 Guía Rápida
 
