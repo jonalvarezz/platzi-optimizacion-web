@@ -14,7 +14,6 @@ async function login(browser, context) {
   await page.type('input[type="email"]', 'mira@que.com')
   await page.type('input[type="password"]', 'bello')
   await page.click('button')
-  page.setCacheEnabled(false)
   await page.waitForSelector('.carousel-item')
 }
 
