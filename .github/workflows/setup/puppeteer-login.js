@@ -2,7 +2,7 @@
  * Login to our app
  *
  * Usa nuestra formulario login y espera
- * hasta que un carousel item salvaje aparezca
+ * hasta que un item del carousel salvaje aparezca
  * <excited-pikachu.gif>
  *
  * @param {puppeteer.Browser} browser
@@ -10,7 +10,7 @@
  */
 async function login(browser, context) {
   const page = await browser.newPage()
-  await page.goto('http://localhost:3000/login')
+  await page.goto(`${url}/login`)
   await page.type('input[type="email"]', 'mira@que.com')
   await page.type('input[type="password"]', 'bello')
   await page.click('button')
