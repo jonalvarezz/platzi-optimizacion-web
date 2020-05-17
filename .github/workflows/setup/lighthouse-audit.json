@@ -5,7 +5,8 @@
       "startServerReadyPattern": "micro",
       "puppeteerScript": "./.github/workflows/setup/puppeteer-login.js",
       "settings": {
-        "disableStorageReset": true
+        "disableStorageReset": true,
+        "onlyCategories": ["performance"]
       }
     },
     "assert": {
