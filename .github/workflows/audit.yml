@@ -4,9 +4,9 @@ name: Performance Audit
 
 # Control: Ejecute la acción para cada Pull Request
 on:
-  push:
-    branches:
-      - lighthouse
+  pull_request:
+    branches: 
+      - todo-lo-bello
 
 jobs:
   lighthouse:
