@@ -2,7 +2,8 @@
 
 name: Performance Audit
 
-# Control: Ejecute la acción para cada Pull Request
+# Control: Ejecute la acción para cada Pull Request 
+# Y cada Push a nuestro bello branch de producción 
 on: 
   pull_request:
   push:
