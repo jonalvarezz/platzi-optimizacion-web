@@ -31,7 +31,7 @@ jobs:
           # nuestro propio servidor Node. Lee más en:
           # LHCLI options https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/cli.md
           # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
-          runs: 5
+          runs: 1
           urls: 'http://localhost:3000'
           configPath: './.github/workflows/setup/lighthouse-audit.json'
           uploadArtifacts: true
