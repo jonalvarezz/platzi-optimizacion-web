@@ -8,7 +8,7 @@
  * @param {puppeteer.Browser} browser
  * @param {{url: string, options: LHCI.CollectCommand.Options}} context
  */
-async function login(browser, context) {
+async function login(browser, { url }) {
   const page = await browser.newPage()
   await page.goto(`${url}/login`)
   await page.type('input[type="email"]', 'mira@que.com')
