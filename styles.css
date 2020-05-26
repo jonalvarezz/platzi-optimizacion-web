@@ -188,6 +188,7 @@ footer a {
   position: relative;
   display: inline-block;
   width: 200px;
+  min-width: 200px;
   height: 250px;
   margin-right: 10px;
   font-size: 20px;
