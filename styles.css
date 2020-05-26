@@ -193,6 +193,7 @@ footer a {
   border-radius: 20px;
   position: relative;
   width: 200px;
+  min-width: 200px;
   height: 250px;
   margin-right: 10px;
   font-size: 20px;
