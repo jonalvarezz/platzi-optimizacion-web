@@ -53,12 +53,12 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
     npm run build
     ```
 
-    El proyecto es una applicación de NodeJS.
+    El sitio podrá ser accedido como un sitio estático.
 
-    La aplicación se puede iniciar con:
+    Un servidor de archivos estático está incluido y se puede iniciar con
 
     ```sh
     npm start
     ```
 
-    El sitio estará disponible en http://localhost:3000.
+    El sitio estará disponible en http://localhost:5000.
