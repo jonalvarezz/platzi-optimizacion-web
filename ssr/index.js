@@ -11,7 +11,7 @@ const PLACEHOLDER = '<div id="ssr-placeholder"></div>'
  * @param {ServerResponse} response
  */
 async function process(request, response) {
-  const homeFileBuffer = fs.readFileSync('./index.html')
+  const homeFileBuffer = fs.readFileSync('./index.template.html')
   const htmlText = homeFileBuffer.toString()
   const [precontent, postcontent] = htmlText.split(PLACEHOLDER)
 
