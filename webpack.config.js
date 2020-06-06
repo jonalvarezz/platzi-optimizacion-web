@@ -12,7 +12,7 @@ if (shouldAnalyze) {
 
 const config = {
   mode: nodeEnv,
-  entry: './src/index.js',
+  entry: './frontend/index.js',
   module: {
     rules: [
       {
