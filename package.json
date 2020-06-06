@@ -7,8 +7,9 @@
   "scripts": {
     "start": "npm run serve",
     "dev": "concurrently \"webpack -w\" \"micro-dev\"",
-    "build": "webpack -p",
-    "serve": "micro"
+    "export": "node export.js",
+    "build": "webpack -p && node export",
+    "serve": "serve ."
   },
   "prettier": {
     "trailingComma": "es5",
