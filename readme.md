@@ -26,6 +26,8 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Aplica lazy load para la librería del modal.
 1. Renderiza el contenido principal desde nuestro propio servidor node (SSR).
 1. Pre-renderiza el contenido principal de forma estática (SSG).
+1. Deploy en Netlify.
+1. Genera el contenido estático cada semana con GitHub Actions.
 
 ### 🤖 Guía Rápida
 
