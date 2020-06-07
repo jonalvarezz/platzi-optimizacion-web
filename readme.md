@@ -11,6 +11,7 @@ Curso de optimización web dictado por [@jonalvarezz](https://twitter.com/jonalv
 1. Reduce Paints en la animacion hover de los items del carousel.
 1. Reduce complejidad de selectores CSS.
 1. Desbloquea la carga del logo.
+1. Evita _Layout Shifts_.
 
 ### 🤖 Guía Rápida
 
