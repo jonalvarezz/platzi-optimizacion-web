@@ -1,4 +1,5 @@
 const h = require('hyperscript')
+const formatISO = require('date-fns/formatISO')
 const { fetchPopular, fetchHighestRated, fetchTrending } = require('./api')
 const CarouselItem = require('./CarouselItem')
 
@@ -26,7 +27,8 @@ async function render() {
     SectionTitle('Most Popular Anime'),
     Carousel({
       itemsList: popular,
-    })
+    }),
+    ContentDate
   )
 
   const htmlText = html.innerHTML
@@ -35,6 +37,15 @@ async function render() {
 }
 
 const SectionTitle = title => h('h3.carousel__title', title)
+
+const todayDate = formatISO(new Date(), {
+  representation: 'date',
+})
+const ContentDate = h(
+  'span',
+  { style: 'display: none' },
+  `Este contenido fue generado el ${todayDate}`
+)
 
 const Carousel = ({ itemsList = [] }) =>
   h(
