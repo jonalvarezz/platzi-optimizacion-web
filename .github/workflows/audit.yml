@@ -29,12 +29,9 @@ jobs:
       - name: Audit with lighthouse CI
         uses: treosh/lighthouse-ci-action@v2
         with:
-          # Usa nuestra configuracion de Lighthouse CI para correr
-          # nuestro propio servidor Node y hacer login con Puppeteer.
+          # Configuración para auditar sobre un sito estático
           # Lee más en:
-          # LHCLI options https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/cli.md
           # treosh/lg-ci-action options https://github.com/marketplace/actions/lighthouse-ci-action
-          runs: 1
-          urls: 'http://localhost:3000'
-          configPath: './.github/workflows/setup/lighthouse-audit.json'
+          runs: 5
           uploadArtifacts: true
+          configPath: './.github/workflows/setup/lighthouse-audit.json'
