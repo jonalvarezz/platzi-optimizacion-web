@@ -29,7 +29,7 @@
     "date-fns": "^2.12.0",
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lozad": "^1.14.0",
     "micro": "^9.3.4",
     "micro-dev": "^3.0.0",
