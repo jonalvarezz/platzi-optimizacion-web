@@ -30,7 +30,7 @@
     "husky": "^4.2.3",
     "hyperscript": "^2.0.2",
     "lodash": "^4.17.20",
-    "lozad": "^1.14.0",
+    "lozad": "^1.16.0",
     "micro": "^9.3.4",
     "micro-dev": "^3.0.0",
     "modal-video": "^2.4.2",
