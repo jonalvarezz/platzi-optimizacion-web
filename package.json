@@ -43,6 +43,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "isomorphic-unfetch": "^3.0.0"
+    "isomorphic-unfetch": "^3.1.0"
   }
 }
