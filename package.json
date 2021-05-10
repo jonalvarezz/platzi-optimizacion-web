@@ -24,7 +24,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^6.0.2",
+    "concurrently": "^6.1.0",
     "css-loader": "^5.2.4",
     "date-fns": "^2.21.1",
     "husky": "^4.3.8",
