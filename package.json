@@ -35,7 +35,7 @@
     "micro-dev": "^3.0.0",
     "modal-video": "^2.4.3",
     "prettier": "2.3.1",
-    "pretty-quick": "^3.1.0",
+    "pretty-quick": "^3.1.1",
     "serve": "^11.3.2",
     "style-loader": "^2.0.0",
     "webpack": "^4.46.0",
