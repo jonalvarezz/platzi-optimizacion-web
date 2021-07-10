@@ -9,18 +9,15 @@
     "dev": "concurrently \"webpack -w\" \"micro-dev\"",
     "export": "node export.js",
     "build": "webpack -p && node export",
-    "serve": "serve ."
+    "serve": "serve .",
+    "pre-commit": "pretty-quick --staged",
+    "prepare": "husky install"
   },
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 2,
     "semi": false,
     "singleQuote": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   },
   "license": "ISC",
   "devDependencies": {
