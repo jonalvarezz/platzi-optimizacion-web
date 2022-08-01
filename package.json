@@ -23,7 +23,7 @@
   "devDependencies": {
     "concurrently": "^6.2.0",
     "css-loader": "^5.2.6",
-    "date-fns": "^2.23.0",
+    "date-fns": "^2.29.1",
     "husky": "^7.0.1",
     "hyperscript": "^2.0.2",
     "lodash": "^4.17.21",
