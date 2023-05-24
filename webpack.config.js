@@ -12,7 +12,12 @@ const config = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: '.',
+    // contentBase: '.',
+    static: {
+      directory: path.join(__dirname, '.'),
+    },
+    compress: true,
+    port: 8080,
   },
 }
 
